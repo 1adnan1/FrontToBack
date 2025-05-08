@@ -1,0 +1,24 @@
+need version
+
+npm install react@18.2.0 react-dom@18.2.0
+
+npm install @chakra-ui/react@2.7.0 @emotion/react@11.11.1 @emotion/styled@11.11.0 framer-motion@10.12.16 react-icons
+
+npm install react-router-dom@6.14.2 react-responsive-carousel@3.2.23
+
+and wrap index.js like
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { ChakraProvider } from '@chakra-ui/react';
+import App from './App';
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <ChakraProvider>
+    <App />
+    </ChakraProvider>
+  </React.StrictMode>
+);
